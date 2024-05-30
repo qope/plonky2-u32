@@ -18,7 +18,8 @@ use plonky2::iop::witness::{PartitionWitness, Witness, WitnessWrite};
 use plonky2::plonk::circuit_builder::CircuitBuilder;
 use plonky2::plonk::circuit_data::{CircuitConfig, CommonCircuitData};
 use plonky2::plonk::vars::{EvaluationTargets, EvaluationVars, EvaluationVarsBase};
-use plonky2::util::ceil_div_usize;
+
+use crate::ceil_div_usize;
 
 const LOG2_MAX_NUM_ADDENDS: usize = 4;
 const MAX_NUM_ADDENDS: usize = 16;

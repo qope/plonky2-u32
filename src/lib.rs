@@ -7,3 +7,7 @@ pub mod gadgets;
 pub mod gates;
 pub mod serialization;
 pub mod witness;
+
+pub const fn ceil_div_usize(a: usize, b: usize) -> usize {
+    (a + b - 1) / b
+}
